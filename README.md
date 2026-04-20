@@ -36,3 +36,19 @@ npm run dev
 | alice    | password123 |
 | bob      | hunter2     |
 | carol    | opensesame  |
+
+## TODOs
+
+**Project Setup**
+- [ ] Create the `.env` file with `pg` connection variables filled in and a `SESSION_SECRET`
+- [ ] Install `dotenv`
+
+**pool.js**
+- [ ] Use `require('dotenv').config()` to load environment variables
+- [ ] Use `process.env` variables to create `devConfig` and `prodConfig` objects
+  - [ ] If `process.env.PG_CONNECTION_STRING` is available, invoke `new Pool()` with the `prodConfig`
+  - [ ] Otherwise, invoke `newPool()` with the `devConfig`
+
+**index.js**
+- [ ] Use `require('dotenv').config()` to load environment variables
+- [ ] Use `process.env.SESSION_SECRET` when configuring the `cookieSession` middleware
