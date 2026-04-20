@@ -2,6 +2,8 @@
 // Imports / Constants
 // ====================================
 
+// ✍️ TODO 1: Import dotenv and invoke config()
+
 const path = require('path');
 const express = require('express');
 
@@ -25,7 +27,8 @@ const pathToFrontend = process.env.NODE_ENV === 'production' ? '../frontend/dist
 // ====================================
 
 app.use(logRoutes);
-// ⚠️ Secret is hardcoded for development only — move to .env before deploying
+
+// ✍️ TODO 2: Replace hard-coded secret with process.env.SESSION_SECRET
 app.use(cookieSession({
   name: 'session',
   secret: 'dev-only-secret-replace-before-deploying',
