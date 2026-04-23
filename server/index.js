@@ -19,7 +19,9 @@ const { listUsers, updateUser, deleteUser } = require('./controllers/userControl
 const { listBookmarks, listUserBookmarks, createBookmark, updateBookmark, deleteBookmark } = require('./controllers/bookmarkControllers'); // NEW
 
 const app = express();
-const PORT = process.env.port || 8080;
+
+// ✍️ TODO 2: Replace hard-coded PORT with process.env.PORT || 8080
+const PORT = process.env.PORT || 8080;
 
 const pathToFrontend = process.env.NODE_ENV === 'production' ? '../frontend/dist' : '../frontend';
 
@@ -29,7 +31,7 @@ const pathToFrontend = process.env.NODE_ENV === 'production' ? '../frontend/dist
 
 app.use(logRoutes);
 
-// ✍️ TODO 2: Replace hard-coded secret with process.env.SESSION_SECRET
+// ✍️ TODO 3: Replace hard-coded secret with process.env.SESSION_SECRET
 app.use(cookieSession({
   name: 'session',
   secret: process.env.SESSION_SECRET,
