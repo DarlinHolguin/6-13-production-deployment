@@ -1,5 +1,7 @@
 # 6-13-production-deployment
 
+Switch to the `solution` branch to see the final version of this application and practice deploying!
+
 ## Setup
 
 Follow these steps to get the server up and running. It currently uses hard-coded values to set up `pool.js` and the `cookie-session` middleware. In the TODOs below, you will fix that!
