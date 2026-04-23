@@ -19,7 +19,7 @@ const { listUsers, updateUser, deleteUser } = require('./controllers/userControl
 const { listBookmarks, listUserBookmarks, createBookmark, updateBookmark, deleteBookmark } = require('./controllers/bookmarkControllers'); // NEW
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.port || 8080;
 
 const pathToFrontend = process.env.NODE_ENV === 'production' ? '../frontend/dist' : '../frontend';
 
