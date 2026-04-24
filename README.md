@@ -53,4 +53,5 @@ Complete these TODOs to prepare your application for deployment.
 
 **index.js**
 - [ ] Use `require('dotenv').config()` to load environment variables
+- [ ] Use `const port = process.env.PORT || 8080` 
 - [ ] Use `process.env.SESSION_SECRET` when configuring the `cookieSession` middleware
