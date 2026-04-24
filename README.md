@@ -2,7 +2,9 @@
 
 ## Setup
 
-Follow these steps to get the server up and running. It currently uses hard-coded values to set up `pool.js` and the `cookie-session` middleware. In the TODOs below, you will fix that!
+Follow these steps to get the server up and running. It currently uses hard-coded values to set up `pool.js` and the `cookie-session` middleware. In the TODOs below, you will fix that! 
+
+First, fork this repo. Then do the following to get set up:
 
 1. Edit `server/db/pool.js` and update the user and password fields to match your local Postgres setup (On macOS you may be able to delete those fields entirely)
 
@@ -37,7 +39,7 @@ Note: If you get an error `connection to server on socket "/tmp/.s.PGSQL.5432" f
 
 ## TODOs
 
-Complete these TODOs to prepare your application for deployment.
+Complete these TODOs to prepare your application for deployment. The `solution` branch contains the deployment-ready version of this application.
 
 **Project Setup**
 - [ ] Copy the `.env.template` file to create a `.env` file with Posgres connection variables filled in and a `SESSION_SECRET`
@@ -51,4 +53,5 @@ Complete these TODOs to prepare your application for deployment.
 
 **index.js**
 - [ ] Use `require('dotenv').config()` to load environment variables
+- [ ] Use `const port = process.env.PORT || 8080`
 - [ ] Use `process.env.SESSION_SECRET` when configuring the `cookieSession` middleware
