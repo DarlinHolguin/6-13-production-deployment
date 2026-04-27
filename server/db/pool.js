@@ -10,7 +10,7 @@ const config = {
   port: process.env.PGPORT,
   database: process.env.PGDATABASE,
   password: process.env.PGPASSWORD,
-  database: process.env.PGDATABASE
+  database: process.env.PGDATABASE,
 };
 
 // ✍️ TODO 3: Create a separate config for production environments that use a connectionString
