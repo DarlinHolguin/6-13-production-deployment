@@ -5,7 +5,7 @@ require('dotenv').config();
 console.log(process.env);
 // ✍️ TODO 2: Replace hard-coded values with process.env
 
-const config = {
+const devConfig = {
   host: process.env.PGHOST,
   port: process.env.PGPORT,
   database: process.env.PGDATABASE,
